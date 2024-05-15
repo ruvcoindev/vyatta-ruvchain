@@ -1,0 +1,2 @@
+help: Restart the specified ruvchain interface
+allowed: ls /config/ruvchain.*.conf | cut -d. -f2

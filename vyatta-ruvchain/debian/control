@@ -1,0 +1,11 @@
+Package: ruvchain-edgeos2x
+Version: 0.3.16
+Section: contrib/net
+Priority: extra
+Architecture: mipsel
+Maintainer: Neil Alexander <neilalexander@noreply.users.github.com> & ruvcoindev <admin@ruvcha.in>
+Depends: vyatta-cfg-system, vyatta-cfg, vyatta-op
+Replaces: vyatta-ruvchain, vyatta-ruvchain-develop
+Description: Vyatta ruvchain package
+ Binary ruvchain package for Vyatta platforms such as
+ the Ubiquiti EdgeRouter X and EdgeRouter Lite

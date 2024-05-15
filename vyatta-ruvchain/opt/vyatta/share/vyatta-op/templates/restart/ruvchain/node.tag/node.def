@@ -1,0 +1,2 @@
+run: sudo -u root -g users /opt/vyatta/sbin/vyatta-restart-ruvchain $3
+help: Restart the specified ruvchain interface

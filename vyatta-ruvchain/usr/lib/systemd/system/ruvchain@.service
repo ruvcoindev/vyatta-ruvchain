@@ -1,0 +1,18 @@
+[Unit]
+Description=ruvchain
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Group=vyattacfg
+ProtectHome=true
+ProtectSystem=true
+SyslogIdentifier=ruvchain
+CapabilityBoundingSet=CAP_NET_ADMIN CAP_NET_RAW
+ExecStart=/usr/local/bin/ruvchain -useconffile /config/ruvchain.%i.conf
+ExecReload=/bin/kill -HUP $MAINPID
+Restart=always
+TimeoutStopSec=5
+
+[Install]
+WantedBy=multi-user.target

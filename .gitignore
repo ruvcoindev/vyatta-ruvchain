@@ -1,0 +1,6 @@
+.DS_Store
+*.deb
+debian-binary
+*.tar.gz
+vyatta-ruvchain/usr/local/bin/ruvchain
+vyatta-ruvchain/usr/local/bin/ruvchainctl
