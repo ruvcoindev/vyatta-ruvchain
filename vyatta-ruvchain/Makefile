@@ -55,7 +55,7 @@ cleanpackage:
 	rm ../data.tar.gz
 
 ruvchainclone:
-	@[ "$(BUILDDIR_RUV)" = "/tmp/ruvchain" ] && git clone -b $(BRANCH) https://github.com/ruvcoindev/ruvchain-go $(BUILDDIR_RUV) || true
+	@[ "$(BUILDDIR_RUV)" = "/tmp/ruvchain" ] && git clone -b $(BRANCH) https://github.com/ruvcoindev/ruvchain $(BUILDDIR_RUV) || true
 
 ruvchainbuild-cross:
 	@[ "$(PKGARCH)" = "mipsel" ] && (cd $(BUILDDIR_RUV) && GOOS='linux' GOARCH='mipsle' GOMIPS='softfloat' ./build) || true
